@@ -26,7 +26,7 @@ public class ExperienceServiceImpl implements ExperienceService {
 //	@Autowired
 //	ApiClient apiClient;
 
-	@Value("${api.customer}")
+	@Value("${api.profile}")
 	private String URL;
 	
 	@Override

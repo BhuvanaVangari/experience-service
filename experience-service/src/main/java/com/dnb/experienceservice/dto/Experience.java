@@ -34,7 +34,7 @@ public class Experience {
 	//@GeneratedValue(strategy = GenerationType.UUID)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "experience_seq")
 	
-	@GenericGenerator(name = "experience_seq", strategy = "com.dnb.DevConnector.utils.CustomIdGenerator",
+	@GenericGenerator(name = "experience_seq", strategy = "com.dnb.experienceservice.utils.CustomIdGenerator",
 	parameters =  {@Parameter(name=CustomIdGenerator.INCREMENT_PARAM,value="1000"),
 			@Parameter(name=CustomIdGenerator.FLAG_PARAMETER,value="true"),
 			@Parameter(name=CustomIdGenerator.VALUE_PREFIX_PARAMETER,value="Exp_"),
